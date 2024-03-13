@@ -3,7 +3,7 @@ from django.http import HttpResponse, HttpResponseNotFound
 
 
 def index(reqest):
-    data = {'title': 'hello my friends',
+    data = {
             'description': 'this project in work'}
     return render(reqest, 'country/index.html', context=data)
 
